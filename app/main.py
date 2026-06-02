@@ -17,24 +17,3 @@ def echo(req: ChatRequest) -> ChatResponse:             # -> ChatResponse - 이 
 
 
 ### ============== api 서버 만들기 완료. ==============
-
-
-
-
-
-
-
-# @app.post("/health", tags=["meta"])
-# def health_write() -> dict[str, str]:
-#     """헬스쓰기 체크 - Docker/k8s liveness 용도."""
-#     return {"status": "write"}
-
-# @app.put("/health", tags=["meta"])
-# def update_health() -> dict[str, str]:
-#     """헬스 업데이트 - Docker/k8s liveness 용도."""
-#     return {"status": "update"}
-
-# @app.delete("health", tags=["meta"])
-# def delete_health() -> dict[str, str]:
-#     """헬스 삭제 - Docker/k8s liveness 용도."""
-#     return {"status": "delete"}
